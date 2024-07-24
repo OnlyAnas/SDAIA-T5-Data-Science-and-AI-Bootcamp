@@ -1,0 +1,19 @@
+Functions used in PD - purpose :
+
+Value.counts() used in catagorical values 
+count() used in numrical values
+df.groupby(['catagorical_column'])['Numircal column].sum() or count() etc .., or doing .agg ( New_Name_column = ['column' , 'sum'] ,  New_Name_column = ['column' , 'count'] .. etc) -- anytype of aggregations will work
+
+
+--------------------
+
+Algorithms used ? :
+
+one-hot encoding , etc.. encoding :
+Used to prepare the data to train the ML Model - from catagorical values to boolean - binary " 0 , 1 "
+
+
+
+
+
+
