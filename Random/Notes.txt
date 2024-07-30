@@ -13,7 +13,10 @@ one-hot encoding , etc.. encoding :
 Used to prepare the data to train the ML Model - from catagorical values to boolean - binary " 0 , 1 "
 
 
-
+----------------------
+polynomial ?
+Why Create a pipeline for polynomial ?
+= To check the best degree for the dataset
 
 
 
