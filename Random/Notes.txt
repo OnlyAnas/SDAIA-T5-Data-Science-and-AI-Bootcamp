@@ -1,3 +1,4 @@
+--------------------- Week 1
 Functions used in PD - purpose :
 
 Value.counts() used in catagorical values 
@@ -5,7 +6,7 @@ count() used in numrical values
 df.groupby(['catagorical_column'])['Numircal column].sum() or count() etc .., or doing .agg ( New_Name_column = ['column' , 'sum'] ,  New_Name_column = ['column' , 'count'] .. etc) -- anytype of aggregations will work
 
 
---------------------
+---
 
 Algorithms used ? :
 
@@ -13,16 +14,34 @@ one-hot encoding , etc.. encoding :
 Used to prepare the data to train the ML Model - from catagorical values to boolean - binary " 0 , 1 "
 
 
-----------------------
+---------------------- Week 3
 polynomial ?
 Why Create a pipeline for polynomial ?
 = To check the best degree for the dataset
 
-----------------------
+---------------
 (estimator=rf, param_grid=hyperparameters, cv=5,  n_jobs=-1, verbose=1)
 Jobs = the usage of CPU/GPU -1 = full usage
 
+----------------------
+MNIST Dataset: ( Week 2 - Day 4)
+The MNIST dataset is a large database of handwritten digits commonly used for training various image processing systems.
+It contains 70,000 images of handwritten digits from 0 to 9, making it a staple dataset for benchmarking classification algorithms.
 
+--
 
+We use segmoid when we are dealing with catagorical values and change it to 0 - 1 so we can deal with and predict it 
+used sigmoid after find the result of 
+Linear regression ( h(0) = theta0, theta1 x1 )
+and putting this result in the segmoid function (Logistic regression)
+More details : SDAIA-T5-Data-Science-and-AI-Bootcamp\Week2\2 - Foundations of Machine Learning\4- Supervised Learning II - Classification\LAB\Logistic_Regression.ipynb
+
+---------------------- Week 2 day 4
+Impalanced data ? -- need to read
+
+--
+
+softmax_reg.predict_proba([[5, 2]]) >> Print the propability of all classes in the model ( Higher value = assigned class)
+softmax_reg.predict([[5, 2]]) >> print only the assigned class
 
 
