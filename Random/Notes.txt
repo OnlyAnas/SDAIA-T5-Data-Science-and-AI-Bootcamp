@@ -44,4 +44,9 @@ Impalanced data ? -- need to read
 softmax_reg.predict_proba([[5, 2]]) >> Print the propability of all classes in the model ( Higher value = assigned class)
 softmax_reg.predict([[5, 2]]) >> print only the assigned class
 
+----------------
+We can use Decision Tree in both ( classification and regression )
 
+-- 
+RandomForest = More than 1 decision tree -
+The input enter each tree and make a decision depending on all the trees - More decision from the trees occur = The result
