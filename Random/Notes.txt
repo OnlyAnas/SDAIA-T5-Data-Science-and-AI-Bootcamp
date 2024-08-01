@@ -50,3 +50,21 @@ We can use Decision Tree in both ( classification and regression )
 -- 
 RandomForest = More than 1 decision tree -
 The input enter each tree and make a decision depending on all the trees - More decision from the trees occur = The result
+
+-- 
+We using This calculations in regression ONLY 
+
+# Measure model performance
+mse = mean_squared_error(y_train, tree_pred)
+print("Mean Squared Error:", mse)
+
+# Measure model performance
+mae = mean_absolute_error(y_train, tree_pred)
+print("Mean Absolute Error:", mae)
+
+# Measure model performance
+rmse = np.sqrt(mean_squared_error(y_train, tree_pred))
+print("Root Mean Squared Error:", rmse)
+
+---
+In Classification We use F1-Score - Accurace - Precesion call
