@@ -68,3 +68,33 @@ print("Root Mean Squared Error:", rmse)
 
 ---
 In Classification We use F1-Score - Accurace - Precesion call
+
+--- Week 3 - Bagging
+Bagging > In Parallel
+Bagging - With replacement
+Bagging steps :
+1- Random subset ( Booststrap = subset of the original sample - if with Booststrap = false thats mean without replacement)
+2- Build the model
+3- aggregations
+
+--
+Roughly Balanced Bagging (RBB) - Handling Impalanced dataset > the strength of this model
+
+-------- Week 3 - Boosting
+Bosting > Sequential 
+Dataset > model > increase weight for miss prediction to avoid it in the next model
+ > model > increase weight for miss value > etc ..
+
+ -----
+ MetaLarnar > Predict the best value in Logistic Regression From ( Stacking models )
+
+----
+DropOut acting same the browning on trees 
+DropOut it's cutting the neural networks
+
+----
+Cross validation : To avoid overfitting
+----
+Augomintation > Increase the dataset with rotate, adding noise, etc .. to the images
+---
+Hetroginues model -- Can take different types of models
