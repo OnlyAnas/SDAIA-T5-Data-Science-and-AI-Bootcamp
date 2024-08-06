@@ -98,3 +98,17 @@ Cross validation : To avoid overfitting
 Augomintation > Increase the dataset with rotate, adding noise, etc .. to the images
 ---
 Hetroginues model -- Can take different types of models
+--
+Need to read more about Boosting - Bagging - Stacking and check every algorithm why used ? adv / disadv ?
+
+----------------------------------
+Task-Driven                                 |              Data-Driven 
+prediction depending on the labeled column  | Unsupervised - Without label (y)
+(Supervised) with knowing the predicted
+value result
+
+----------------------------------
+Association in Clusterting :
+Find the relationsip between features - Association Rules :Association rules are used to find relationships between variables in 
+large datasets. This technique is commonly used in market basket analysis to identify sets of 
+products frequently bought together. 
