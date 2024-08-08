@@ -112,3 +112,12 @@ Association in Clusterting :
 Find the relationsip between features - Association Rules :Association rules are used to find relationships between variables in 
 large datasets. This technique is commonly used in market basket analysis to identify sets of 
 products frequently bought together. 
+
+-----------------------------------
+
+Dropout in deep Learning means to drop a hidden layer randomly ( Like browning in DecisionTree )
+----
+Weight in neural networks = the strength of the connection
+-
+Perceptrons?
+• Perceptrons are binary classification algorithms
