@@ -121,3 +121,5 @@ Weight in neural networks = the strength of the connection
 -
 Perceptrons?
 • Perceptrons are binary classification algorithms
+-----
+BackPropagation depend on chain rule way
