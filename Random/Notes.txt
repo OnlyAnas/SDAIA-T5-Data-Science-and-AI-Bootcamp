@@ -123,3 +123,26 @@ Perceptrons?
 • Perceptrons are binary classification algorithms
 -----
 BackPropagation depend on chain rule way
+--
+segmoid which is kind of activation function makes the values between 0 - 1 
+--
+activation functions:
+
+1- binary step function 
+
+2- Linear Function
+
+3- sigmoid Function - Mostly used in hidden Layers - Result = (0 , 1) - always posivtive
+
+4- Hyperbolic tanget Function - Similar to segmoid function - result (-1 , 1)
+
+5- RelU function - Mostly used now - max(0 , Z) if input = negative > will convert it to 0 
+
+6- Leaky RelU function
+
+7- Softmax function - Type of segmoid function for classification = propabilities of the input to define the class
+
+#### segmoid and Hyperbolic are avoided in many applications now due to the vanishing gradient problem
+#### RelU is the most used now
+
+-------------------------------
