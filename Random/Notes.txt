@@ -146,3 +146,62 @@ activation functions:
 #### RelU is the most used now
 
 -------------------------------
+model = Sequential()
+n_cols = concrete_data.shape[1]
+model.add(Dense(5 , activiation='relu' , input_shape=(n_cols,))) #First hidden layer need to specify the number of input
+model.add(Dense(5 , activiation='relu')) #Hidden layer
+model.add(Dense(1)) #Output layer
+model.compile(optimizer='adam', loss='mean_squared_error') #loss function depends on the problem - ( Regression / Classification )
+model.fit(predictors,target)
+model.predict(test_data)
+
+n_cols = the size of the number of features
+activation = activation function will be used
+Dense = The layer types
+
+optimizer = gradient deceent , Adam 
+### adam optimizer specify the learning rate by itself !!
+-------
+
+------------
+CNN good for computer vision applications
+RNN good for NLP 
+-----
+Pooling layer ?:
+Reduce dimensions of the data
+
+CNN has a pooling layer which is:
+1- Max-Pooling or Avg-Pooling layers 
+
+1- Max-Pooling:
+[124 | 75 | 54 | 100]                                   2x2
+[90  | 64 | 254| 276] After applying max-pooling = [124 (Max value in first 2x2) | 276 (Max value in second 2x2) ]
+[..  | .. | .. | .. ]                              [Max value > | > Max value of 2x2 in original image]
+
+2- Avg-Pooling
+Same way but we calculate the avg of the 2x2 values in each 
+Ex. = 124 + 75 + 90 + 64 / 4 
+      1x1   1x2  2x1  2x2
+
+CNN Model :
+    model = Sequential()
+    model.add(Conv2D(16, (5, 5), activation='relu', input_shape=(28, 28, 1))) #Input layer 
+    model.add(MaxPooling2D(pool_size=(2, 2), strides=(2, 2))) #Max-Pooling layer
+    model.add(Conv2D(8, (2, 2), activation='relu'))
+    model.add(MaxPooling2D(pool_size=(2, 2), strides=(2, 2)))
+    model.add(Flatten())
+    model.add(Dense(100, activation='relu'))
+    model.add(Dense(num_classes, activation='softmax'))
+    # Compile model
+    model.compile(optimizer='adam', loss='categorical_crossentropy',  metrics=['accuracy'])
+
+
+Autoencoder =
+input image > Encode > compressed image > decoder > original image
+---
+Popular type of encoder ?
+Restricted Boltzmann Machines (RBM).
+-
+RBM fixing impalanced dataset 
+RBM Estimating missing values
+RBM Automatic feature Extraction
